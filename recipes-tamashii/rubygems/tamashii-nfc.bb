@@ -14,6 +14,7 @@ S = "${WORKDIR}/git"
 
 SRC_URI = " \
     git://github.com/tamashii-io/nfc.git \
+    file://tamashii-nfc.gemspec \
     "
 
 inherit rubygems
