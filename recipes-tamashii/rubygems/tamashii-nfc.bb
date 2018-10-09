@@ -2,7 +2,7 @@
 # Released under the MIT license (see COPYING.MIT for the terms)
 
 LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://LICENSE;md5=82f692763cbdc66ff2bcad103f3230f6"
+LIC_FILES_CHKSUM = "file://README.md;md5=82f692763cbdc66ff2bcad103f3230f6"
 
 PR = "r0"
 
@@ -14,7 +14,7 @@ S = "${WORKDIR}/git"
 
 SRC_URI = " \
     git://github.com/tamashii-io/nfc.git \
-    file://tamashii-nfc.gemspec \
+    file://git/tamashii-nfc.gemspec \
     "
 
 inherit rubygems
