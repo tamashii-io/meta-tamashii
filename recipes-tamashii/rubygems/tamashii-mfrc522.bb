@@ -21,5 +21,5 @@ inherit rubygems
 BBCLASSEXTEND = "native"
 
 RDEPENDS_${PN} += " \
-    pi_piper \
+    pi-piper \
 "

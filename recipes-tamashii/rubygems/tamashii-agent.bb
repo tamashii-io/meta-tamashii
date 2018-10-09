@@ -27,10 +27,10 @@ RDEPENDS_${PN} += " \
      tamashii-hookable \
      websocket-driver \
      nio4r \
-     pi_piper \
+     pi-piper \
      tamashii-mfrc522 \
      tamashii-nfc \
      i2c \
      aasm \
-     concurrent-ruby" \
+     concurrent-ruby \
 "
