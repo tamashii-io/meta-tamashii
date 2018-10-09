@@ -13,7 +13,7 @@ SRCREV = "e0cf60f76e29d5a4ff5adda34e725214ed4e0a32"
 S = "${WORKDIR}/git"
 
 SRC_URI = " \
-     git://github.com/eventmachine/eventmachine.git \
+    git://github.com/eventmachine/eventmachine.git \
     "
 
 inherit rubygems
