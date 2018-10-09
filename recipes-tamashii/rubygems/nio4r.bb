@@ -1,3 +1,6 @@
+# Copyright (C) 2018 蒼時弦也 <contact@frost.tw>
+# Released under the MIT license (see COPYING.MIT for the terms)
+
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://LICENSE.txt;md5=6863f71241a2515e27864f676a3a8a84"
 

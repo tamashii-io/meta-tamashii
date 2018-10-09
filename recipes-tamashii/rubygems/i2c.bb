@@ -1,19 +1,19 @@
 # Copyright (C) 2018 蒼時弦也 <contact@frost.tw>
 # Released under the MIT license (see COPYING.MIT for the terms)
 
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://LICENSE.md;md5=c0438c8a9a4ba501b1e649bb9fa82c0e"
+LICENSE = "GPL3"
+LIC_FILES_CHKSUM = "file://i2c.gemspec;md5=21bc957abd58360b263194cdcea2572e"
 
 PR = "r0"
 
-BPV = "0.1.3"
+BPV = "0.4.2"
 PV = "${BPV}"
-SRCREV = "60318127e24f75e0793e4df2432d2fbaf4f035e9"
+SRCREV = "ee146fc787212b15dd955d635ed1a7822916f873"
 
 S = "${WORKDIR}/git"
 
 SRC_URI = " \
-    git://github.com/faye/websocket-extensions-ruby.git \
+    git://github.com/andec/i2c.git \
     "
 
 inherit rubygems

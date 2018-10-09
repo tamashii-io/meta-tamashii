@@ -1,19 +1,19 @@
 # Copyright (C) 2018 蒼時弦也 <contact@frost.tw>
 # Released under the MIT license (see COPYING.MIT for the terms)
 
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://LICENSE.md;md5=c0438c8a9a4ba501b1e649bb9fa82c0e"
+LICENSE = "APACHE"
+LIC_FILES_CHKSUM = "file://LICENSE;md5=2b42edef8fa55315f34f2370b4715ca9"
 
 PR = "r0"
 
-BPV = "0.1.3"
+BPV = "0.1.0"
 PV = "${BPV}"
-SRCREV = "60318127e24f75e0793e4df2432d2fbaf4f035e9"
+SRCREV = "feb98c75a606adc4dbb38952a662c355ea189061"
 
 S = "${WORKDIR}/git"
 
 SRC_URI = " \
-    git://github.com/faye/websocket-extensions-ruby.git \
+    git://github.com/tamashii-io/tamashii-hookable.git \
     "
 
 inherit rubygems

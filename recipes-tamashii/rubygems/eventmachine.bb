@@ -1,19 +1,19 @@
 # Copyright (C) 2018 蒼時弦也 <contact@frost.tw>
 # Released under the MIT license (see COPYING.MIT for the terms)
 
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://LICENSE.md;md5=c0438c8a9a4ba501b1e649bb9fa82c0e"
+LICENSE = "GPL2"
+LIC_FILES_CHKSUM = "file://LICENSE;md5=270149a18e664d261350cfe727055898"
 
 PR = "r0"
 
-BPV = "0.1.3"
+BPV = "1.0.9"
 PV = "${BPV}"
-SRCREV = "60318127e24f75e0793e4df2432d2fbaf4f035e9"
+SRCREV = "e0cf60f76e29d5a4ff5adda34e725214ed4e0a32"
 
 S = "${WORKDIR}/git"
 
 SRC_URI = " \
-    git://github.com/faye/websocket-extensions-ruby.git \
+     git://github.com/eventmachine/eventmachine.git \
     "
 
 inherit rubygems

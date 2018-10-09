@@ -1,19 +1,19 @@
 # Copyright (C) 2018 蒼時弦也 <contact@frost.tw>
 # Released under the MIT license (see COPYING.MIT for the terms)
 
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://LICENSE.md;md5=3a5ada2f9da3cc94e2bf853f7f0a3ba6"
+LICENSE = "BSD2"
+LIC_FILES_CHKSUM = "file://LICENSE.md;md5=f507d4fa294f68af390d6ae59f0f7c8e"
 
 PR = "r0"
 
-BPV = "0.7.0"
+BPV = "2.0.0"
 PV = "${BPV}"
-SRCREV = "12d2aa8a80fcae4414276675245021a55b58871a"
+SRCREV = "c61900111604861d2b740173eadc385fb13df40c"
 
 S = "${WORKDIR}/git"
 
 SRC_URI = " \
-    git://github.com/faye/websocket-driver-ruby.git \
+    git://github.com/jwhitehorn/pi_piper.git \
     "
 
 inherit rubygems
@@ -21,5 +21,6 @@ inherit rubygems
 BBCLASSEXTEND = "native"
 
 RDEPENDS_${PN} += " \
-    websocket-extensions \
+    ffi \
+    eventmachine \
 "

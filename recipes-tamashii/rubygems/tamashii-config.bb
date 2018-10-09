@@ -1,19 +1,19 @@
 # Copyright (C) 2018 蒼時弦也 <contact@frost.tw>
 # Released under the MIT license (see COPYING.MIT for the terms)
 
-LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://LICENSE.md;md5=3a5ada2f9da3cc94e2bf853f7f0a3ba6"
+LICENSE = "APACHE"
+LIC_FILES_CHKSUM = "file://LICENSE;md5=2b42edef8fa55315f34f2370b4715ca9"
 
 PR = "r0"
 
-BPV = "0.7.0"
+BPV = "0.2.0"
 PV = "${BPV}"
-SRCREV = "12d2aa8a80fcae4414276675245021a55b58871a"
+SRCREV = "74c51d8cc4dbf818c5070d98288232ff4c520932"
 
 S = "${WORKDIR}/git"
 
 SRC_URI = " \
-    git://github.com/faye/websocket-driver-ruby.git \
+    git://github.com/tamashii-io/tamashii-config.git \
     "
 
 inherit rubygems
@@ -21,5 +21,5 @@ inherit rubygems
 BBCLASSEXTEND = "native"
 
 RDEPENDS_${PN} += " \
-    websocket-extensions \
+    tamashii-hookable \
 "

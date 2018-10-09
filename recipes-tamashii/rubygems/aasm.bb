@@ -2,20 +2,24 @@
 # Released under the MIT license (see COPYING.MIT for the terms)
 
 LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://LICENSE.md;md5=c0438c8a9a4ba501b1e649bb9fa82c0e"
+LIC_FILES_CHKSUM = "file://LICENSE;md5=d4e6dcfaf544118f10b776fd45ecb52a"
 
 PR = "r0"
 
-BPV = "0.1.3"
+BPV = "5.0.1"
 PV = "${BPV}"
-SRCREV = "60318127e24f75e0793e4df2432d2fbaf4f035e9"
+SRCREV = "b93bd80c3c8ac671c60760dd8a46d2a25ac860b8"
 
 S = "${WORKDIR}/git"
 
 SRC_URI = " \
-    git://github.com/faye/websocket-extensions-ruby.git \
+    git://github.com/aasm/aasm.git \
     "
 
 inherit rubygems
 
 BBCLASSEXTEND = "native"
+
+RDEPENDS_${PN} += " \
+    concurrent-ruby \
+"
