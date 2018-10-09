@@ -13,6 +13,6 @@ SRC_URI = " \
     git://github.com/socketry/nio4r.git \
     "
 
-inherit ruby
+inherit rubygems
 
 BBCLASSEXTEND = "native"

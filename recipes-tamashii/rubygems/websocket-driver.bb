@@ -13,7 +13,7 @@ SRC_URI = " \
     git://github.com/faye/websocket-driver-ruby.git \
     "
 
-inherit ruby
+inherit rubygems
 
 BBCLASSEXTEND = "native"
 
