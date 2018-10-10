@@ -20,3 +20,14 @@ SRC_URI = " \
 inherit rubygems
 
 BBCLASSEXTEND = "native"
+
+do_configure[depends] += "libffi:do_populate_sysroot"
+do_configure[depends] += "libffi-native:do_populate_sysroot"
+
+DEPEND_${PN} += " \
+    libffi-native \
+"
+
+RDEPEND_${PN} += " \
+    libffi \
+"
