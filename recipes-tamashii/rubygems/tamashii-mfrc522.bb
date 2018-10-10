@@ -15,6 +15,7 @@ S = "${WORKDIR}/git"
 
 SRC_URI = " \
     git://github.com/tamashii-io/MFRC522_Ruby.git \
+    file://git/mfrc522.gemspec \
     "
 
 inherit rubygems
