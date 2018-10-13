@@ -2,7 +2,7 @@
 # Released under the MIT license (see COPYING.MIT for the terms)
 
 LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://LICENSE.md;md5=fde65ae93d18826f70c6fe125aa04297"
+LIC_FILES_CHKSUM = "file://LICENSE.txt;md5=f8743706d9bd84f1b05c55d47756ef4f"
 
 PR = "r0"
 
