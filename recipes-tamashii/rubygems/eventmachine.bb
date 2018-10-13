@@ -8,12 +8,11 @@ PR = "r0"
 
 BPV = "1.0.9"
 PV = "${BPV}"
-SRCREV = "e0cf60f76e29d5a4ff5adda34e725214ed4e0a32"
 
-S = "${WORKDIR}/git"
+S = "${WORKDIR}/eventmachine-1.0.9"
 
 SRC_URI = " \
-    git://github.com/eventmachine/eventmachine.git \
+    https://github.com/eventmachine/eventmachine/archive/v1.0.9.tar.gz \
     "
 
 inherit rubygems
