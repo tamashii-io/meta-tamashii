@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name        = 'mfrc522'
+  s.name        = 'tamashii-mfrc522'
   s.version     = '1.0.8'
   s.date        = '2017-09-10'
   s.summary     = 'MFRC522 RFID Reader Library for RaspberryPi'
