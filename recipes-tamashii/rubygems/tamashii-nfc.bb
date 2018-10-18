@@ -2,7 +2,7 @@
 # Released under the MIT license (see COPYING.MIT for the terms)
 
 LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://README.md;md5=82f692763cbdc66ff2bcad103f3230f6"
+LIC_FILES_CHKSUM = "file://README.rdoc;md5=82f692763cbdc66ff2bcad103f3230f6"
 
 PR = "r0"
 
@@ -20,3 +20,14 @@ SRC_URI = " \
 inherit rubygems
 
 BBCLASSEXTEND = "native"
+
+do_configure[depends] += "libnfc:do_populate_sysroot"
+do_configure[depends] += "libnfc-native:do_populate_sysroot"
+
+DEPENDS_${PN} += " \
+    libnfc-native \
+"
+
+RDEPENDS_${PN} += " \
+    libnfc \
+"
