@@ -2,7 +2,7 @@
 # Released under the MIT license (see COPYING.MIT for the terms)
 
 LICENSE = "BSD2"
-LIC_FILES_CHKSUM = "file://LICENSE.md;md5=f507d4fa294f68af390d6ae59f0f7c8e"
+LIC_FILES_CHKSUM = "file://LICENCE.md;md5=f507d4fa294f68af390d6ae59f0f7c8e"
 
 PR = "r0"
 
