@@ -14,9 +14,29 @@ S = "${WORKDIR}/git"
 
 SRC_URI = " \
     git://github.com/tamashii-io/tamashii-agent.git \
+    file://agent.rb \
+    file://tamashii-agent.service \
     "
 
-inherit rubygems
+FILES_${PN} += " \
+    ${sysconfdir}/tamashii \
+"
+
+inherit rubygems systemd
+
+SYSTEMD_PACKAGES = "tamashii-agent"
+SYSTEMD_SERVICE_${PN} = "tamashii-agent.service"
+SYSTEMD_AUTO_ENABLE_${PN} = "enable"
+
+do_install_append() {
+    install -d ${D}${sysconfdir}/tamashii
+    sed -i -e 's#[@]TAMASHII_AGENT_TOKEN[@]#${TAMASHII_AGENT_TOKEN}#' ${WORKDIR}/agent.rb
+    sed -i -e 's#[@]TAMASHII_AGENT_HOST[@]#${TAMASHII_AGENT_HOST}#' ${WORKDIR}/agent.rb
+    install -m 0644 ${WORKDIR}/agent.rb ${D}${sysconfdir}/tamashii
+
+    install -d ${D}${systemd_system_unitdir}
+    install -m 0644 ${WORKDIR}/tamashii-agent.service ${D}${systemd_system_unitdir}
+}
 
 BBCLASSEXTEND = "native"
 
@@ -34,3 +54,5 @@ RDEPENDS_${PN} += " \
      aasm \
      concurrent-ruby \
 "
+
+REQUIRED_DISTRO_FEATURES= "systemd"

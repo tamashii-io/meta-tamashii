@@ -1,0 +1,17 @@
+[Unit]
+Description=Start Tamashii Agent service
+After=syslog.target network.target
+
+[Service]
+Type=simple
+User=root
+PrivateTmp=yes
+WorkingDirectory=/tmp
+ExecStart=/usr/bin/tamashii-agent -C /etc/tamashii/agent.rb
+User=root
+TimeoutSec=30
+RestartSec=15s
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
