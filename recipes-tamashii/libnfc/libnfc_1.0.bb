@@ -8,11 +8,11 @@ DEPENDS = "libusb-compat"
 
 FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}-${PV}:"
 
-SRCREV = "bc8bb8de895688af520909ee1e16d243d71abddf"
+SRCREV = "2d4543673e9b76c02679ca8b89259659f1afd932"
 SRC_URI = "git://github.com/nfc-tools/libnfc.git"
 
 S = "${WORKDIR}/git"
 
-inherit autotools
+inherit autotools pkgconfig
 
 BBCLASSEXTEND = "native nativesdk"
